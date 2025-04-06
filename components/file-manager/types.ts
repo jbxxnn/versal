@@ -5,11 +5,19 @@ export interface User {
 }
 
 export interface FileData {
-  id: string
-  name: string
-  size: string
-  type: string
-  uploadedBy: User
-  lastModified: string
+  id: string;
+  document_id: string;
+  filename: string;
+  url: string;
+  created_at: string;
+  updated_at: string;
+  type?: string;
+  size?: string;
+  lastModified?: string;
+  uploadedBy?: {
+    name: string;
+    email: string;
+    avatar?: string;
+  };
 }
 

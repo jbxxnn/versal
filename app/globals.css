@@ -7,6 +7,8 @@
   --foreground: #333333;
   --border: #e1e2e3;
   --container: #ffffff;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
 }
 
 body {

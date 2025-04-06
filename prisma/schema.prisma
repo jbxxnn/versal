@@ -1,0 +1,8 @@
+model Document {
+  id          String   @id @default(cuid())
+  documentId  String   @unique
+  filename    String
+  url         String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+} 
